@@ -3,7 +3,7 @@ import axios from 'axios';
 const apiKey = '608973bb521ee77852e12c4f4fb705d2';
 const url = 'https://api.themoviedb.org/3';
 const nowPlayingUrl = `${url}/movie/now_playing`;
-const topratedUrl = `${url}/movie/top_rated`;
+const topRatedUrl = `${url}/movie/top_rated`;
 const movieUrl = `${url}/movie`;
 const genreUrl = `${url}/genre/movie/list`;
 const moviesUrl = `${url}/discover/movie`;
@@ -23,7 +23,7 @@ export const fetchMovies = async () => {
       const modifiedData = data['results'].map((m) => ({
          id: m['id'],
          backPoster: posterUrl + m['backdrop_path'],
-         popularity: m['popularith'],
+         popularity: m['popularity'],
          title: m['title'],
          poster: posterUrl + m['poster_path'],
          overview: m['overview'],
@@ -95,9 +95,9 @@ export const fetchPersons = async () => {
    } catch (error) { }
 }
 
-export const fetchTopratedMovie = async () => {
+export const fetchTopatedMovie = async () => {
    try {
-      const { data } = await axios.get(topratedUrl, {
+      const { data } = await axios.get(topRatedUrl, {
          params: {
             api_key: apiKey,
             language: 'uk-UA',

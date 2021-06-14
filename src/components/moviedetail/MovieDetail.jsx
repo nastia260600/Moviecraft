@@ -214,7 +214,7 @@ export function MovieDetail({ match }) {
             <div className="col-md-8 col-sm-6" style={{ color: "#5a606b" }}>
                <h3 style={{ textTransform: "uppercase" }}>Про нас</h3>
                <p>
-                  На <span style={{ fontWeight: 700, fontSize: 18 }}> Moviecraft </span> ви можете не тільки знайти собі підходящий фільм в любому жанрі,
+                  На <span style={{ fontWeight: 500, fontSize: 18, color: "#f4c10f" }}> Moviecraft </span> ви можете не тільки знайти собі підходящий фільм в любому жанрі,
                   а і подивитись список самих рейтингових фільмів, найцікавіші новинки у сфері кіно,
                   а також дізнатись які актори, режисери та інші персони популярні на цьому тижні.
                   На сторінці кожного фільма ви знайдете оцінку критиків і звичайник глядачів, короткий опис сюжету,
@@ -241,7 +241,7 @@ export function MovieDetail({ match }) {
                   </li>
                   <li>
                      <p>
-                        <i className="fas fa-envelope"></i> <span className="contacts">Email:</span> {"moviecraft@gmail.com "}
+                        <i className="fas fa-envelope"></i> <span className="contacts">Email:</span> <a href="mailto:moviecraft@gmail.com" style={{ textDecoration: "none", color: "#f4c10f" }}>{"moviecraft@gmail.com "}</a>
                      </p>
                   </li>
 
