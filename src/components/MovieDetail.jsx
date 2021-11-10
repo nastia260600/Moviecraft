@@ -4,7 +4,7 @@ import {
    fetchMovieVideos,
    fetchCasts,
    fetchSimilarMovie,
-} from "../../service";
+} from "../service";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import { Modal } from "react-bootstrap";
 import ReactPlayer from "react-player";
@@ -219,11 +219,11 @@ export function MovieDetail({ match }) {
                   а також дізнатись які актори, режисери та інші персони популярні на цьому тижні.
                   На сторінці кожного фільма ви знайдете оцінку критиків і звичайник глядачів, короткий опис сюжету,
                   акторський склад, жанр, постер і схожі фільми на вами вибраний.
-          </p>
+               </p>
                <p>
                   Єдине, що вам треба зробити - це відпочивати і насолоджуватись. Найкращі трейлери і фільми саме на цій сторінці.
                   Всі питання та пропозиції можете надсилати нам за контактами правіше.
-          </p>
+               </p>
 
             </div>
             <div className="col-md-4 col-sm-6" style={{ color: "#5a606b" }}>

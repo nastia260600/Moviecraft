@@ -1,8 +1,8 @@
 import React from "react";
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import { Home } from './components/home/Home';
-import { MovieDetail } from './components/moviedetail/MovieDetail';
+import { Home } from './components/Home';
+import { MovieDetail } from './components/MovieDetail';
 
 export function App() {
   return (
